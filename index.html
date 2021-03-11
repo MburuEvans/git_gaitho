@@ -4,10 +4,157 @@
         <title>Learning Git</title>
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <style>.btn-primary{background-color: rgb(119, 42, 14);} body{background-color: rgb(190, 73, 30);} .col{padding: 5px;} .carrd-body{background-color:  rgb(119, 42, 14);}</style>
     </head>
     <body>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(119, 42, 14);">
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active"  style="background-color: rgb(70, 25, 9);"aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Categories
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: rgb(119, 42, 14);">
+                      <li><a class="dropdown-item" href="#">Classic Meals</a></li>
+                      <li><a class="dropdown-item" href="#">Combo Meals</a></li>
+                      <li><a class="dropdown-item" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>   
+                  </ul>               
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://mlqmtwka8c9g.i.optimole.com/gOh5_1g.Ga1T~1cfa5/w:auto/h:auto/q:90/https://www.competethemes.com/wp-content/uploads/2017/03/rosa-1.png" class="d-block w-100" height="500px" alt="...">
+                    <a href="#"><div class="carousel-caption d-none d-md-block" style="background-color: rgb(119, 42, 14);">
+                      <h3>Welcome to EvanRosa Restaurant</h3>
+                      <p>Your satisfaction is our priority</p>
+                    </div></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://d1ralsognjng37.cloudfront.net/8f189795-7452-482d-9cb9-dd4362b4558c.jpeg" class="d-block w-100" height="500px" alt="...">
+                <a href="#"><div class="carousel-caption d-none d-md-block" style="background-color: rgb(119, 42, 14);">
+                  <h3>Explore Our Categories</h3>
+                  <p>Choose from our broad categories of food and drinks to your satisfaction</p>
+                </div></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://lerablog.org/wp-content/uploads/2017/07/fregew.jpg" class="d-block w-100" height="500px" alt="...">
+                <a href="#"><div class="carousel-caption d-none d-md-block" style="background-color: rgb(119, 42, 14);">
+                  <h3>Make a Reservation</h3>
+                  <p>Reserve a table for up to ten people for an exclusive experience</p>
+                </div></a>
+              </div>              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h3>Trending Meals</h3>
+          <div class="container">
+            <div class="row">
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="https://www.dinneratthezoo.com/wp-content/uploads/2019/12/homemade-french-fries-5-500x500.jpg" height="200px" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-text">French Fries😋</h3>
+                        <p class="card-text">Regular</p>                        
+                        <div class="alert alert-info"><p class="card-text">Ksh 150</p></div>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="https://static.toiimg.com/photo/53110049.cms"  height="200px" class="card-img-top" class="imgcard" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-text">Pizza</h3>
+                        <p class="card-text">Medium</p>                        
+                        <div class="alert alert-info"><p class="card-text">Ksh 500</p></div>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="https://taste.co.za/wp-content/uploads/2018/08/Double-beef-burger.png" class="card-img-top" height="200px" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-text">Burger</h3>
+                        <p class="card-text">King Size</p>                       
+                        <div class="alert alert-info"><p class="card-text">Ksh 350</p></div>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://1.bp.blogspot.com/-2HaV8d8jIjY/XsY8vdXJqlI/AAAAAAAAXiw/eT6vfoSdohYHpYD9RrJBftfylP2RA522wCLcBGAsYHQ/s1600/maru-bhajiya-01.jpg" class="card-img-top" height="200px" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-text">Bhajia</h3>
+                      <p class="card-text">Regular</p>                      
+                      <div class="alert alert-info"><p class="card-text">Ksh 180</p></div>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.oliviascuisine.com/wp-content/uploads/2019/10/fried-chicken-thumb-720x540.jpg" class="card-img-top" height="200px" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-text">Chicken</h3>
+                      <p class="card-text">Deep fried</p>                      
+                      <div class="alert alert-info"><p class="card-text">Ksh 250</p></div>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200-735x735.jpg" class="card-img-top" height="200px" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-text">Shawarma</h3>
+                      <p class="card-text">Regular</p>                      
+                      <div class="alert alert-info"><p class="card-text">Ksh 300</p></div>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+        </div>
     </body>
 </html>
